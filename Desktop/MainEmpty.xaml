@@ -1,0 +1,25 @@
+﻿<Window x:Class="Desktop.MainEmpty"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Desktop"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen" MinWidth="800" MinHeight="600"
+    Title="Window1" Height="600" Width="800" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+    <Grid HorizontalAlignment="Center" Width="800" Height="584" VerticalAlignment="Center">
+        <Grid.ColumnDefinitions>    
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image Margin="10,10,0,0" Source="logo1.png" Stretch="Fill" Width="75" Height="75" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="Добро пожаловать!&#xD;&#xA;&#xD;&#xA;Создайте свою первую&#xD;&#xA;задачу!" HorizontalAlignment="Left" Margin="150,99,0,0" VerticalAlignment="Top" Grid.IsSharedSizeScope="True" Width="428" Height="189" FontFamily="Actor" FontSize="32"/>
+        <Button Content="Создать первую задачу" HorizontalAlignment="Left" Margin="286,356,0,0" VerticalAlignment="Top" Height="39" Width="227" Background="#FFF96060" Click="Button_Click_1" FontSize="18" Foreground="White" BorderBrush="White" TextBlock.FontFamily="Actor" FontFamily="Actor">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="7, 7, 7, 7"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+    </Grid>
+</Window>
